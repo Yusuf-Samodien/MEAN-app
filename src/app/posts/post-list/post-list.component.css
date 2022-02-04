@@ -1,0 +1,8 @@
+:host { /*target the element itself*/
+  display: block; /*set all elements to block level elements so that they can have the same margin*/
+  margin-top: 1rem;
+}
+
+.info-text{
+  text-align: center
+}

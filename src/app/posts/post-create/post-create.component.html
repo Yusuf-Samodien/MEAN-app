@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="enteredTitle">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput rows="6" [(ngModel)]="enteredContent"></textarea> <!--- [value]="" is changing the value of a property named value within the textarea object, incredible.--->
+  </mat-form-field>
+  <button
+  mat-raised-button
+  color = "primary"
+  (click)="onAddPost()">Save Post</button> <!--- (click is an angular method, adds a listener directly into the template, pretty cool.) --->
+</mat-card>
